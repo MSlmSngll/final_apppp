@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA">
+
+    <!-- MSS BANK Başlığı -->
+    <TextView
+        android:id="@+id/textBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSS BANK"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- HOŞGELDİNİZ -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOŞGELDİNİZ!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/textBankName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- TCKN Girişi -->
+    <EditText
+        android:id="@+id/editTCKN"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="TCKN"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <!-- Parola Girişi -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editTCKN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <!-- Şifremi Unuttum -->
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum"
+        android:textSize="12sp"
+        android:textColor="#007BFF"
+        app:layout_constraintTop_toBottomOf="@id/editPassword"
+        app:layout_constraintEnd_toEndOf="@id/editPassword"
+        android:layout_marginTop="8dp" />
+
+    <!-- Müşteri Ol -->
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Müşteri Ol"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/textForgotPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Devam Et Butonu -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Devam Et"
+        android:backgroundTint="#B3E5FC"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/textRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
